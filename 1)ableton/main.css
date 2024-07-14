@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family:'Roboto', sans-serif;
+   background-color: whitesmoke;
+}
+
+nav{
+    padding:1rem;
+    padding-bottom: 0.5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom:double ;
+    font-weight: 700;
+    font-size: large;
+}
+
+ nav ul{
+     list-style: none;
+     display:flex;
+     flex-direction: row;
+}
+
+.main-menu{
+    display:flex;
+    justify-content: space-between;
+}
+.main-menu a:hover{
+   color:#ff764d;
+}
+li{
+    padding:1rem;
+}
+.more-orange{
+    color: #ff764d;
+}
+a ,a:visited{
+    text-decoration: none;
+    color:black;
+
+}
+a:hover,a:focus{
+    color:blue;
+}
+
+.btn-login{
+    border: 2px solid white;
+    border-radius:3px;
+    
+}
+.btn-login a{
+    color:blue;
+    transition:color 0.2s , border 2s;
+    
+}
+
+.btn-login a:hover{
+    color:white;
+    border: 2px solid blue;
+    border-radius:2rem;
+    padding: 7px;
+    background-color: blue;
+    transition-timing-function:  ease-in;
+}
+
+.logo{
+    font-family: "Playwrite MX", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color:black;
+    font-size: x-large;
+}
+.after-header{
+
+    left:auto;
+    font-weight: 300;
+}
+.after-header-inside ul{
+   
+    display:flex;
+    flex-direction: row;
+    align-self: flex-start;
+    list-style: none;
+    z-index:2;
+}
+.after-header-inside li{
+    padding-top: 2rem;
+    padding-left:2rem;
+    padding-bottom: -2rem;
+    font-weight: 500;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+.after-header .more-orange a{
+    color:#ff764d
+}
+
+.main-img {
+   padding:5rem ;
+   padding-top: 2rem;
+   display:block;
+   z-index: -1;
+   position: relative;
+   text-align: center;
+   color: white;
+}
+
+main .text-img1 p{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+    color:rgb(244,140,0);
+
+}
+
+.first-para{
+    padding: 70px 0;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-weight: 400;
+    line-height: 1.7;
+
+}
+.first-text{
+    padding-bottom :1.4rem;
+}
+.first-para p{
+    line-height: 1.7;
+}
+.first-text a{
+    color:blue;
+}
+.yellow-collage{
+    padding-left:25rem;
+}
+.first-color{
+    background-color:#fbffa7;
+    width: 700px;
+    height: 1200px;
+    z-index:-1;
+}
+.image-collage{
+    display:flex;
+    justify-content: space-around;
+    transform: translateY(-120%);
+    padding-left: 3rem;
+}
+.second-img{
+   margin-top: 5rem;
+}
+.second-para{
+    padding: 70px 0;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-weight: 400;
+    line-height: 1.7;
+    transform: translateY(-250%);
+
+}
+.second-text{
+    padding-bottom :1.4rem;
+}
+.second-para p{
+    line-height: 1.7;
+}
+
+figure{
+    padding: 70px 0;
+    padding-left: 23rem;
+    padding-right: 25rem;
+    transform: translateY(-118%);
+}
+.third-para{
+    padding: 70px 0;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-weight: 400;
+    line-height: 1.7;
+    transform: translateY(-140%);
+
+}
+.third-text{
+    padding-bottom :1.4rem;
+}
+.third-para p{
+    line-height: 1.7;
+}
+
+.card {
+    position: relative;
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    margin: 40px;
+    text-align: center;
+    transform: translateX(90%);
+    transform: translate(90%);
+    margin-top:-25rem;
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 300%;
+    height: 300%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+  
+    background-image:url('img/peter-thomas-QW9KjjgZIbc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-back {
+    background-color: #fff;
+    padding: 10rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: rotateY(180deg);
+    line-height: 1.7;
+}
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+footer{
+    margin-bottom:10rem;
+    transform: translateY(200%);
+    background-color: grey;
+}
+footer .footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color:whitesmoke;
+    margin-bottom: 3rem;
+    
+}
+.get-in-touch form ,button ,.Download ul,.help ul,.social-apps ul {
+text-decoration: none;
+list-style: none;
+margin-left: 4rem;
+
+}
+.get-in-touch form{
+    padding-bottom: 2rem;
+}
+.get-in-touch p{
+    margin-left:4rem;
+    
+}
+.get-in-touch input{
+    border-radius: 1rem;
+    padding:1rem;
+}
+.get-in-touch button{
+    border:solid aliceblue 2px;
+    padding:1rem;
+    border-radius:2rem;
+}
+.get-in-touch button:hover{
+   background-color: blueviolet;
+   color:aliceblue;
+}
+.get-in-touch h3,.Download h3,.help h3,.social-apps h3
+    { 
+       padding:5rem;
+    }
+.social-apps ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin:auto;
+    padding: 1rem;
+
+}
+
+.social-apps ul  li{
+    font-size: 2em;
+    border-radius: 4em;
+}
+.social-apps ul li bxl-facebook-square:hover{
+    background-color: white;
+    color:dodgerblue;
+}
+   
+.copyright{
+    background-color: #0000;
+}
+.copyright-line{
+    text-align: center;
+
+}
+.copyright-line:hover{
+   background-color: black;
+   color:aliceblue;
+}
+
+.subscribe-button{
+    padding:4em;
+   background-color: aqua;
+   color:#ff764d
+
+}
